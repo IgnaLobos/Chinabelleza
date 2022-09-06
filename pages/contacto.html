@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- fila de logo + nav --> 
+	<header>
+		<nav>
+			<a href="../index.html"><img class="header__logo" src="../assets/img/Logo China.jpg" alt="imagen logo"></a>
+			<ul class="menu">
+				<li class="menu__item"><a href="../index.html">Home</a></li>
+				<li class="menu__item"><a href="../pages/producto.html">Productos</a></li>
+				<li class="menu__item"><a href="../pages/ubicacion.html">Ubicacion</a></li>
+				<li class="menu__item"><a href="../pages/contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- cierre de fila logo + nav -->
+	<!-- fila de información de mi sitio -->
+	<section>
+		<img src="/assets/img/header contacto.jpg" alt="imagen contacto" width="50%">
+	</section>
+	<section>
+		<h1>CONTACTO</h1>
+	</section>
+	<!-- formulario de contacto -->
+	<section>
+		<article class="formulario__style">
+			<form action="#">
+				<input type="text" placeholder="Escribe tu nombre"><br>
+				<label for="email">Email:
+					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
+				</label>
+				<label for="Observaciones"> Observaciones:<br>
+					<textarea placeholder="Observaciones"></textarea>
+				</label> <br>
+				<input type="number" placeholder="Escribe tu edad"><br>
+				<div><p>¿Sobre que producto quieres información? :</p>
+					<div>Cuadernos
+						<input type="radio" name="producto" value="Cuadernos">
+					</div>
+					<div>Tags e insumos
+						<input type="radio" name="producto" value="Tags e insumos">
+					</div>
+				</div>
+				<p>¿De que país eres?</p>
+				<select name="letra" id="letra"> 
+					<option value="x">Argentina</option>
+					<option value="y">Chile</option>
+					<option value="z">Uruguay</option>
+				</select>
+				<div>Queres recibir info sobre nosotros?
+				<input type="checkbox" name="acepta" value="1"></div>
+				<input type="submit" value="ENVIAR">
+				<input type="reset" value="RESETEAR">
+			</form>
+		</article>
+	</section>
+	<!-- cierre de form contacto -->
+	<!-- inicio de footer --> 
+	<footer>
+		<div class="info__izquierda">
+		<h3 class="footer__enlaces">MEDIOS DE PAGO</h3>
+		<h3 class="footer__enlaces">FORMAS DE ENVIO</h3>
+	    </div>
+		<div class="info__derecha">
+		<h3 class="footer__enlaces">NUESTRAS REDES</h3>
+		<h3 class="footer__enlaces">CONTACTO</h3>
+	    </div>
+		<p class="footer__p">&copy Todos los derechos reservados</p>   
+	</footer >
+	<img class="wpp" src="../assets/img/whatsapp.webp" alt="whats">
+</body>
+</html>
