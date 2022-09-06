@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,208,218,1) 0%, rgba(255,255,255,0.8995973389355743) 100%);
 }
 
 header {
@@ -203,4 +205,12 @@ footer {
 .menu {
     flex-direction: column;
 }
+}
+
+.tarjeta:hover {
+  transform: scale(1.1) translateY(-30px);
+}
+
+.tarjeta {
+  transition: transform 1s;
 }
