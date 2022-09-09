@@ -6,14 +6,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,208,218,1) 0%, rgba(255,255,255,0.8995973389355743) 100%);
 }
 
-header {
-    background-color:rgb(169, 211, 245); 
-    padding: 10px;
-}
 
 
 .menu {
@@ -41,8 +35,6 @@ header {
 
 
 .header__logo {
-    height: 100px;
-    width: 100px;
     border-radius: 50%;
     background-size: cover;
     list-style: none;
@@ -177,17 +169,8 @@ footer {
     font-weight: bold;
   }
  
-  .servicios {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 0 20px;
-  }
   
-  .servicios__titulo {
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 30px;
-  }
+
   
   .servicios__contenido {
     display: grid;

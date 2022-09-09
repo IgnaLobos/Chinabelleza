@@ -5,77 +5,92 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 	<title>China Belleza</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-secondary">
 	<!-- Encabezado --> 
 	<header>
 		<nav>
-			<a href="./index.html"><img class="header__logo" src="./assets/img/Logo China.jpg" alt="imagen logo"></a>
-			<ul class="menu">
-				<li class="menu__item"><a href="index.html">Home</a></li>
-				<li class="menu__item"><a href="pages/producto.html">Productos</a></li>
-				<li class="menu__item"><a href="pages/ubicacion.html">Ubicacion</a></li>
-				<li class="menu__item"><a href="pages/contacto.html">Contacto</a></li>
+			<nav class="navbar navbar-expand-lg  fs-2" style="background-color: #e3f2fd;">
+				<div class="container-fluid">
+				  <a  class="navbar-brand header__logo" href="./index.html"> <img src="./assets/img/Logo China.jpg" width="150px" height="150px" alt="logo"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./pages/producto.html">Producto</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./pages/ubicacion.html">Ubicacion</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./pages/contacto.html">Contacto</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
 			</ul>
 		</nav>
 	</header>
 	<!-- Fin de encabezado -->
 	<!-- Contenido de sitio -->
 	<main>
-		<section class="servicios">
-		  <h3 class="servicios__titulo">Nuestros ultimos cursos de encuadernacion</h3>
-		  <div class="servicios__contenido">
-			<!-- tarjeta 1 -->
-			<article class="tarjeta">
-			  <div class="tarjeta__principal">
-				<small class="tarjeta__cabecera">Nuevo</small>
-				<img class="tarjeta__img" src="./assets/img/imag 1.jpg" alt="Encuadernacion cuero" width="325" height="215" />
-			  </div>
-			  <h2 class="tarjeta__titulo">Curso de encuadernacion en cuero</h2>
-			  <p class="tarjeta__descripcion">Aprenderás a seleccionar los diferentes tipos de cuero y como protegerlos</p>
-			  <a class="tarjeta__link" href="">Saber más</a>
-			</article>
-  
-			<!-- tarjeta 2 -->
-			<article class="tarjeta">
-			  <div class="tarjeta__principal">
-				<small class="tarjeta__cabecera">Nuevo</small>
-				<img class="tarjeta__img" src="./assets/img/imag 2.jpg" alt="Encuadernacion tela" width="325" height="215" />
-			  </div>
-			  <h2 class="tarjeta__titulo">Curso de encuadernacion en tela</h2>
-			  <p class="tarjeta__descripcion">Aprenderás a seleccionar las mejores telas para encuadernar y como protegerlas</p>
-			  <a class="tarjeta__link" href="">Saber más</a>
-			</article>
-
-			<!-- tarjeta 3 -->
-			<article class="tarjeta">
-				<div class="tarjeta__principal">
-				  <small class="tarjeta__cabecera">Nuevo</small>
-				  <img class="tarjeta__img" src="./assets/img/imag 3.jpg" alt="Encuadernacion cartone" width="325" height="215" />
-				</div>
-				<h2 class="tarjeta__titulo">Curso de encuadernacion cartone</h2>
-				<p class="tarjeta__descripcion">Aprenderás a utilizar la tecnica cartone para encuadernar y forrar</p>
-				<a class="tarjeta__link" href="">Saber más</a>
-			  </article>
-  
+		<section class="d-flex justify-content-center align-items-center">
+		  <h2 class="text-white mt-5">Nuestros ultimos cursos de encuadernacion</h2>
 		</section>
-	  </main>
+
+		<section class="container">
+			<div class="row mt-5">
+				<div class="col-md-4">
+					<div class="card h-100 text-bg-light">
+					 <img src="./assets/img/imag 1.jpg" class="card-img-top" alt="1">
+					 <div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+					<div class="card h-100 text-bg-light">
+					 <img src="./assets/img/imag 2.jpg" class="card-img-top" alt="2">
+					 <div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+					<div class="card h-100 text-bg-light">
+					 <img src="./assets/img/imag 3.jpg" class="card-img-top" alt="3">
+					 <div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+	</main>
 	<!-- inicio de footer --> 
 	<footer>
-		<div class="info__izquierda">
-		<h3 class="footer__enlaces">MEDIOS DE PAGO</h3>
-		<h3 class="footer__enlaces">FORMAS DE ENVIO</h3>
+		<div>
+		 <p class="footer__p">&copy Todos los derechos reservados</p>   
 	    </div>
-		<div class="info__derecha">
-		<h3 class="footer__enlaces">NUESTRAS REDES</h3>
-		<h3 class="footer__enlaces">CONTACTO</h3>
-	    </div>
-		<p class="footer__p">&copy Todos los derechos reservados</p>   
 	</footer >
 	<img class="wpp" src="./assets/img/whatsapp.webp" alt="whats">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
