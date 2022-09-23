@@ -12,11 +12,6 @@ body {
   right: 10px;
   width: 50px; }
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1; }
-
 .header__logo {
   border-radius: 50%;
   background-size: cover;
@@ -24,16 +19,43 @@ body {
   filter: brightness(1.1);
   mix-blend-mode: multiply; }
 
+.pie {
+  background-color: #44a7d4;
+  color: white;
+  padding-block: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
+
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: pink; }
+
+.fa-whatsapp {
+  background-color: green; }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  justify-content: center; }
+  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
+    background-color: #b36e9c; }
+
+.tel {
+  width: 100px;
+  height: 100px;
+  background-color: green; }
+
 .tarjeta:hover {
   transform: scale(1.1) translateY(-30px); }
 
 .tarjeta {
   transition: transform 1s; }
-
-  .pie {
-    background-color: #44a7d4;
-    color: white;
-    padding-block: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around; }

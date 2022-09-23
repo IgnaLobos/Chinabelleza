@@ -15,3 +15,46 @@
     text-align: center;
     display: flex;
     justify-content: space-around; }
+
+.iconos {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ 
+}
+
+    $redes: (
+        facebook: blue,
+        instagram: pink,
+        whatsapp: green,
+    );
+ @each $redsocial, $color in $redes {
+    .fa-#{$redsocial} {
+        background-color: $color ;
+    }
+    
+ }
+
+ .fa-facebook {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    justify-content: center;
+    &:hover {
+        background-color: rgb(179, 110, 156);
+    }
+ }
+
+ .fa-instagram {
+    @extend .fa-facebook;
+ }
+
+ .fa-whatsapp {
+    @extend .fa-facebook
+ }
+
+ .tel {
+    width: 100px;
+    height: 100px;
+    background-color: map-get($redes, whatsapp);
+ }
