@@ -19,13 +19,6 @@ body {
   filter: brightness(1.1);
   mix-blend-mode: multiply; }
 
-.pie {
-  background-color: #44a7d4;
-  color: white;
-  padding-block: 50px;
-  text-align: center;
-  display: flex;
-  justify-content: space-around; }
 
 .iconos {
   display: flex;
@@ -59,3 +52,27 @@ body {
 
 .tarjeta {
   transition: transform 1s; }
+
+.imagenPrincipal {
+  height: 80vh;
+  background-image: url("../assets/img/header\ contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px;
+}
+
+.imagenPrincipal h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.596);
+  padding-inline: 15px;
+}
+
+.imagenPrincipal p {
+  color: white;
+  text-align: center;
+}
